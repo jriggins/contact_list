@@ -13,6 +13,17 @@
       .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
         background-color: #fff;
       }
+      #contact-image-container {
+        border: solid thin;
+        height: 80px;
+        width: 80px;
+        border-radius: 1em;
+      }
+      #contact-image-container img {
+        height: 80px;
+        width: 80px;
+        border-radius: 1em;
+      }
     </style>
   </head>
   <body>
@@ -48,6 +59,20 @@
       </section>
       <section id="contact-details" class="span9 well">
         <h3>Contact Details Section</h3>
+        <div class="container-fluid">
+          <div id="contact-image-container" class="span1">
+            <img src="http://www.gravatar.com/avatar/28a4050222159a7e93cd615de15ee761.png"/>
+          </div>
+          <div id="contact-details-form" class="span7">
+            <form class="form-vertical">
+              <label>Name</label>
+              <input type="text" name="contact_name"/>
+              <label>Age</label>
+              <input type="text" name="age"/><br/>
+              <button type="submit" id="contact-save" class="btn-primary">Save</button>
+            </form>
+          </div>
+        </div>
       </section>
     </div>
   </body>
