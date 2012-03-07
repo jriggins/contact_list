@@ -10,6 +10,9 @@
       #customer-details {
         height: 600px;
       }
+      .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+        background-color: #fff;
+      }
     </style>
   </head>
   <body>
@@ -23,6 +26,25 @@
       </div>
       <section id="customer-search" class="span3 well">
         <h3>Customer Search Section</h3>
+        <div id="customer-search-list">
+          <table class="table table-striped table-bordered" style="z-index: 1;">
+            <thead>
+              <tr>
+                <th>Name</th>
+              </tr>
+            <tbody>
+              <tr>
+                <td>Contact One</td>
+              </tr>
+              <tr>
+                <td>Contact Two</td>
+              </tr>
+              <tr>
+                <td>Contact Three</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section id="customer-details" class="span9 well">
         <h3>Customer Details Section</h3>
